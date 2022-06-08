@@ -1,0 +1,23 @@
+# data files
+*.gz
+
+# plots and csv output files and some data files (this didn't work for some reason) 
+.pdf
+.csv
+.gff
+.png
+
+# data directories
+data/
+
+# out directoires
+out/
+
+# analysis directoires
+analysis/
+
+# jupyter notebook checkpoint files
+.ipynb_checkpoints/
+
+# .DS_Store files
+*.DS_Store
