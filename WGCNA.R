@@ -362,6 +362,5 @@ GeneOrder = order(summary_info$ModuleLabel, -abs(summary_info$GS.SA60.treatment)
 summary_info = summary_info[GeneOrder,]
 head(summary_info)
 
-# #Output table:
-# write.csv(summary_info, file = paste("BigNetwork_summary_info_ds", deepSplit, ".csv", sep = ""),
-#           row.names = FALSE, quote = FALSE);
+#Output table:
+write.csv(summary_info, file = "~/Desktop/Thaps_Catl/Network_summary_info.csv", row.names = FALSE, quote = FALSE)
