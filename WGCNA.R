@@ -1,11 +1,13 @@
 # Zinka 2020_06_16
 # Script for analyzing the expression data using network correlation analysis with WGCNA 
-
+#
 #Inputs:
-
+# - Table with TPM values for all genes in all samples (all_abundnace_TPM.csv)
+# - Table with measured experimental paratmeters (Experimental_parameters.csv)
+#
 #Outputs:
-
-
+# - Plots of module contruction and relation to expermental traits, plots of module and gene selection. 
+# - Data table with module membership and gene significnace for filtrate treatment for all analyzed smaples and genes. 
 
 library(WGCNA)
 options(stringsAsFactors = FALSE)
