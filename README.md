@@ -7,7 +7,7 @@ GutHub page contiaing code for transcrtiptome processing descripbed in paper: ""
 - WGCNA.R: Script that runs WGCNA clustering  
 - GLM_DE.R: Script that does differential expression analysis using EdgeR. 
 
-# Instruction for running scripts:
+# Instructions for running scripts:
 
 1. Download all data .csv files from Zenodo (link). There are two files: all_abundance_TPM.csv and XXX.csv
 2. Create a folder on your desktop called Thaps_Catl, and save all files and code into that folder (~/Desktop/Thaps_Catl). 
