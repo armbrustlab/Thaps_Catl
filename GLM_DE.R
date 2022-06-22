@@ -5,7 +5,7 @@
 # - Table with TPM values for all genes in all samples (all_abundnace_TPM.csv)
 #
 # Outputs: 
-# - PLots: Mean square deviation plot, dispertion plots, differential expression plots. 
+# - Plots: Mean square deviation plot, dispertion plots, differential expression plots. 
 # - Data table with logFC and p-values for differential expression of trated vs. control T. pseudonana cultures at each time point. 
 
 library(edgeR)
