@@ -44,7 +44,7 @@ par(mfrow=c(1,1), mar = c(16,8,3,3) +0.1)
 boxplot(ExprTable_log, main="All samples Log2 TPM data including low-level genes", cex.axis = 1, las = 3, title.cex = 1, ylab = "log2 (TPM)", cex.lab = 1)
 boxplot(ExprTable_log_filt, main="All samples Log2 TPM data after deletion low-level genes", cex.axis = 1, las = 3, title.cex = 1, ylab = "log2 (TPM)", cex.lab = 1)
 
-#Renaming final expression table to ExprTable.
+#Transposing final expression table to ExprTable.
 ExprTable = as.data.frame(t(ExprTable_log_filt))
 
 ################################################################
