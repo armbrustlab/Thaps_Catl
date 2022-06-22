@@ -19,7 +19,7 @@ library(tidyverse)
 ################################################################
 
 #Importing the raw TPM expression table:
-ExprTable_raw = read.csv('~/Desktop/Thaps_Catl/all_abundnace_TPM.csv')
+ExprTable_raw = read.csv('~/Desktop/Thaps_Catl/all_abundance_TPM.csv')
 
 #Importing the raw experimental traits table:
 ExpTraits = read.csv('~/Desktop/Thaps_Catl/Experimental_parameters.csv')

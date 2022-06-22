@@ -20,7 +20,7 @@ library(stringr)
 ################################################################
 
 #Reading in count file containing all experimental groups with only raw TPM counts, no annotations! 
-rawdata<- read.csv(file = '~/Desktop/Thaps_Catl/all_abundnace_TPM.csv',
+rawdata<- read.csv(file = '~/Desktop/Thaps_Catl/all_abundance_TPM.csv',
                    check.names=FALSE, 
                    stringsAsFactors = FALSE, 
                    header = TRUE)
