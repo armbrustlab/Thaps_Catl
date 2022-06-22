@@ -6,6 +6,7 @@ GutHub page contiaing code for transcrtiptome processing descripbed in paper: ""
 
 - WGCNA.R: Script that runs WGCNA clustering  
 - GLM_DE.R: Script that does differential expression analysis using EdgeR. 
+- enrichment.R: Script that performs functional enrichemnt on genes in WGCNA modules and DE genes for the three time comparisons.
 
 # Instructions for running scripts:
 
