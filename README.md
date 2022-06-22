@@ -1,6 +1,6 @@
 # Thaps_Catl
 
-GitHub page contiaing code for transcrtiptome processing descripbed in paper 
+GitHub page contiaing code for transcrtiptome processing described in paper 
 
 "Flavobacterial exudates disrupt cell cycle progression and metabolism of the diatom Thalassiosira pseudonana" 
 
