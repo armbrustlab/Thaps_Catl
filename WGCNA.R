@@ -1,5 +1,6 @@
 # Zinka 2020_06_16
 # Script for analyzing the expression data using network correlation analysis with WGCNA 
+# Parts of this script were adapted from WGCNA online tutorials: https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/index.html
 #
 #Inputs:
 # - Table with TPM values for all genes in all samples (all_abundnace_TPM.csv)
@@ -13,6 +14,8 @@ library(WGCNA)
 options(stringsAsFactors = FALSE)
 library(dplyr)
 library(tidyverse)
+
+setwd('~/Desktop/Thaps_Catl')
 
 ################################################################
 # Importing files:

@@ -15,6 +15,8 @@ library(ggplot2)
 library(tidyr)
 library(stringr)
 
+setwd('~/Desktop/Thaps_Catl')
+
 ################################################################
 # Importing files:
 ################################################################

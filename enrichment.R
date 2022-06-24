@@ -10,6 +10,15 @@
 # - Summary of enriched terms for the module or DE time comparison being analyzed 
 #   (for topGO enrichment: GO_enrich_summary, for KEGG enrichment: KEGG_enrich_summary)
 
+# # Use Bioconductor to install topGO, clusterProfiler, and enrichplot with BiocManager
+# if (!require("BiocManager", quietly = TRUE))
+#   install.packages("BiocManager")
+# BiocManager::install(version = "3.15")
+# #install packages
+# BiocManager::install("topGO") 
+# BiocManager::install("clusterProfiler") 
+# BiocManager::install("enrichplot") 
+
 library(topGO)
 library(ggplot2)
 library(plyr)
@@ -17,6 +26,8 @@ library(dplyr)
 library(tidyverse)
 library(clusterProfiler)
 library(enrichplot)
+
+setwd('~/Desktop/Thaps_Catl')
 
 ################################################################
 # Importing files:
@@ -45,7 +56,7 @@ module = "9"
 #Define list of genes that belongs to that module:
 MyInterestingGenes = WGCNA$Gene_ID [ WGCNA$ModuleLabel == module]
 
-# ##### For enrichment of DE genes at each time point:
+# ##### For enrichment of DE genes at each time point, the 'modules' can be defined here. 
 # #Set the timepoint to look at (all possible timepoints: t24, t72, t120)
 # module = "t24"
 # #Define list of genes that belongs to DE timepoint:
@@ -86,7 +97,6 @@ resultFisher
 #Summary table:
 GO_enrich_summary <- GenTable(GOdata,
                    classicFisher = resultFisher,
-                   #weightFisher = resultWeight,
                    orderBy = "classicFisher", 
                    ranksOf = "classicFisher", 
                    topNodes = length(resultFisher@score),
