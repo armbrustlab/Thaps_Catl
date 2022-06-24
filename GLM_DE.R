@@ -124,6 +124,7 @@ abline(h=c(-1,1), col="blue") #adding a blue line that indicates a 2-fold change
 dev.off()
 
 #Export csv table of DE genes for the selected contrast:
+top_genes = topTags(de, n=nrow(y), sort.by = "logFC")
 file = paste("~/Desktop/Thaps_Catl/", name, ".csv", sep = "")
 write.csv(top_genes$table, file=file)
 
