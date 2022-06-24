@@ -45,19 +45,19 @@ module = "9"
 #Define list of genes that belongs to that module:
 MyInterestingGenes = WGCNA$Gene_ID [ WGCNA$ModuleLabel == module]
 
-##### For enrichment of DE genes at each time point:
-#Set the timepoint to look at (all possible timepoints: t24, t72, t120)
-module = "t24"
-#Define list of genes that belongs to DE timepoint:
-if (module == "t24") {
-  MyInterestingGenes <- DE$t24_geneID
-}
-if (module == "t72") {
-  MyInterestingGenes <- DE$t72_geneID
-}
-if (module == "t120") {
-  MyInterestingGenes <- DE$t120_geneID
-}
+# ##### For enrichment of DE genes at each time point:
+# #Set the timepoint to look at (all possible timepoints: t24, t72, t120)
+# module = "t24"
+# #Define list of genes that belongs to DE timepoint:
+# if (module == "t24") {
+#   MyInterestingGenes <- DE$t24_geneID
+# }
+# if (module == "t72") {
+#   MyInterestingGenes <- DE$t72_geneID
+# }
+# if (module == "t120") {
+#   MyInterestingGenes <- DE$t120_geneID
+# }
 
 ################################################################
 # Functional enrichemnt with topGO
@@ -105,3 +105,14 @@ cnetplot(KEGG_enrich, categorySize = "pvalue") #Visualize enriched term and asso
 
 # Create summary:
 KEGG_enrich_summary = subset(KEGG_enrich@result , KEGG_enrich@result$qvalue <= 0.1) 
+
+
+################################################################
+# Output files:
+################################################################
+
+out.file <- paste0("Module_",module, "_GO_enrich_summary.csv")
+write.csv(GO_enrich_summary, file=out.file)
+
+out.file <- paste0("Module_",module, "_KEGG_enrich_summary.csv")
+write.csv(KEGG_enrich_summary, file=out.file)
