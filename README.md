@@ -10,6 +10,8 @@ GitHub page contiaing code for transcrtiptome processing described in paper
 - GLM_DE.R: Script that does differential expression analysis using EdgeR. 
 - enrichment.R: Script that performs functional enrichemnt on genes in WGCNA modules and differentially expressed genes for the three time comparisons.
 
+R version used: R version 4.1.0 (2021-05-18)
+
 # Instructions for running scripts:
 
 1. Download all data .csv files from Zenodo (10.5281/zenodo.6672614). There are 5 data files needed for the code to run: all_abundance_TPM.csv, DE.csv, Experimental_parameters.csv, thaps_GO.txt, WGCNA_network.csv
